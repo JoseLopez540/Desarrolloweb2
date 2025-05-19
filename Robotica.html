@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Capítulos</title>
+    <style>
+        nav {
+            background-color: white;
+            overflow: hidden;
+            display: flex;
+            margin: 20px 0;
+            gap: 20px;
+            justify-content: center;
+        }
+        nav a {
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+            font-weight: bold;
+            border-radius: 10px;
+            background-color: #3498db;
+            transition: all 0.3s ease;
+            position: relative;  
+         } 
+        nav a::before{
+            content: "";
+            position: absolute;
+            width: 0%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background-color: #2980b9;
+            border-radius: 10px;
+            z-index: -1;
+            transition: width 0.3s ease;
+        }
+
+        nav a:hover::before{
+            width: 100%;
+        }
+        nav a:hover {
+            background-color: #ddd;
+            transform: scale(1.1);
+            box-shadow: 4px 4px 10px rgba(0,0,0,0.3);
+        }
+        section{
+            padding: 2rem;
+            margin: 2rem auto;
+            max-width: 1200px;
+            background-color: #ddd;
+            border-radius: 1rem;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+        }
+        article{
+            margin-bottom: 1.5rem;
+            padding: 1.5rem;
+            background-color: white;
+            border-left: 4px solid #ddd;
+            border-radius: 0.5rem;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+        }
+        article p{
+            color: #555;
+            line-height: 1.6;
+        }
+        section, article{
+            transition: all 0.5s;
+        }
+        </style>
+</head>
+<body>
+    <nav>
+        <a href="Index.html">Inicio</a>
+        <a href="Robotica.html">Robotica</a>
+        <a href="Subcarpeta1/Juego.html">Juego y Formulario</a>
+    </nav>
+<section>
+    <article>
+    <h2>Capítulo 1: Robótica</h2>
+    <p>La robótica es una disciplina que se ocupa del diseño, operación, manufacturación, estudio y aplicación de autómatas o robots. Para ello, combina la ingeniería mecánica, ingeniería eléctrica, ingeniería electrónica, ingeniería biomédica y las ciencias de la computación, así como otras disciplinas.</p>
+    <p>La robótica representa la cumbre en la trayectoria de desarrollo tecnológico, es decir, del diseño de herramientas. Su cometido es construir una herramienta que pueda desempeñar muchas de las labores que actualmente desempeña el ser humano, de manera más eficiente y rápida, o en condiciones y ambientes que al ser humano le serían inaccesibles.</p>
+    <p>El robot es, de algún modo, la herramienta más inteligente posible. Sin embargo, el desarrollo de este tipo de herramientas, ya desde los años de los inicios de la automatización, también se traduce en desempleo y en la sustitución de mano de obra humana por autómatas.
+
+        Esto alimenta también un miedo ancestral a perder el control sobre este tipo de herramientas, o a ser reemplazado, dominado o violentado por ellas, advertencias que figuran incluso en textos tan antiguos como el Golem de la tradición hebrea, o el monstruo de Frankenstein creado por la novelista inglesa Mary Shelley.</p>
+    <center><img src="Robotica.jpg" alt="Imagen de Robótica" width="300"></center>
+</article>
+<article>
+    <h2>Capítulo 2: Inteligencia Artificial</h2>
+    <p>La inteligencia artificial (IA) es una tecnología que permite a las computadoras y máquinas simular el aprendizaje humano, la comprensión, la resolución de problemas, la toma de decisiones, la creatividad y la autonomía.
+
+        Las aplicaciones y dispositivos equipados con IA pueden ver e identificar objetos. Pueden entender y responder al lenguaje humano. Pueden aprender de nueva información y experiencia. Pueden hacer recomendaciones detalladas a usuarios y expertos. Pueden actuar de manera independiente, reemplazando la necesidad de inteligencia o intervención humana (un ejemplo clásico es un automóvil autónomo).</p>
+   <p>Las aplicaciones y dispositivos equipados con IA pueden ver e identificar objetos. Pueden entender y responder al lenguaje humano. Pueden aprender de nueva información y experiencia. Pueden hacer recomendaciones detalladas a usuarios y expertos. Pueden actuar de manera independiente, reemplazando la necesidad de inteligencia o intervención humana (un ejemplo clásico es un automóvil autónomo).
+
+    Pero en 2024, la mayoría de los investigadores y profesionales de la IA (y la mayoría de los titulares relacionados con la IA) se centran en los avances en la IA generativa , una tecnología que puede crear texto, imágenes, videos y otros contenidos originales. Para comprender plenamente la IA generativa, es importante entender primero las tecnologías sobre las que se basan las herramientas de IA generativa: machine learning (ML) y aprendizaje profundo.</p>
+        
+    <p>
+        Directamente debajo de la IA, tenemos machine learning, que consiste en crear modelos entrenando a un algoritmo para hacer predicciones o tomar decisiones basadas en datos. Abarca una amplia gama de técnicas que permiten a las computadoras aprender y hacer inferencias basadas en datos sin estar programados explícitamente para tareas específicas.
+
+        Existen muchos tipos de técnicas o algoritmos de machine learning, como regresión lineal, regresión logística, árboles de decisión, bosques aleatorios, máquinas de vectores de soporte (SVM), k vecinos más cercanos (KNN), clustering y otros. Cada uno de estos enfoques es adecuado para distintos tipos de problemas y datos.
+    </p>
+    <center><img src="IA.jpg" alt="Imagen de Inteligencia Artificial" width="300"></center>
+</article>
+<article>
+    <h2>Capítulo 3: Diseño y Desarrollo Web</h2>
+    <p>Directamente debajo de la IA, tenemos machine learning, que consiste en crear modelos entrenando a un algoritmo para hacer predicciones o tomar decisiones basadas en datos. Abarca una amplia gama de técnicas que permiten a las computadoras aprender y hacer inferencias basadas en datos sin estar programados explícitamente para tareas específicas.
+
+        Existen muchos tipos de técnicas o algoritmos de machine learning, como regresión lineal, regresión logística, árboles de decisión, bosques aleatorios, máquinas de vectores de soporte (SVM), k vecinos más cercanos (KNN), clustering y otros. Cada uno de estos enfoques es adecuado para distintos tipos de problemas y datos.</p>
+    <p>Directamente debajo de la IA, tenemos machine learning, que consiste en crear modelos entrenando a un algoritmo para hacer predicciones o tomar decisiones basadas en datos. Abarca una amplia gama de técnicas que permiten a las computadoras aprender y hacer inferencias basadas en datos sin estar programados explícitamente para tareas específicas.
+
+        Existen muchos tipos de técnicas o algoritmos de machine learning, como regresión lineal, regresión logística, árboles de decisión, bosques aleatorios, máquinas de vectores de soporte (SVM), k vecinos más cercanos (KNN), clustering y otros. Cada uno de estos enfoques es adecuado para distintos tipos de problemas y datos.</p>
+    <p>Directamente debajo de la IA, tenemos machine learning, que consiste en crear modelos entrenando a un algoritmo para hacer predicciones o tomar decisiones basadas en datos. Abarca una amplia gama de técnicas que permiten a las computadoras aprender y hacer inferencias basadas en datos sin estar programados explícitamente para tareas específicas.
+
+        Existen muchos tipos de técnicas o algoritmos de machine learning, como regresión lineal, regresión logística, árboles de decisión, bosques aleatorios, máquinas de vectores de soporte (SVM), k vecinos más cercanos (KNN), clustering y otros. Cada uno de estos enfoques es adecuado para distintos tipos de problemas y datos.</p>
+    <center><img src="Diseño y desarrollo web.jpg" alt="Imagen de Desarrollo Web" width="300"></center>
+</article>
+<article>
+    <h2>Video Recomendado</h2>
+    <center><iframe width="560" height="315" src="https://www.youtube.com/embed/bHOrWkkXWmM?si=dPuVsvm4Bhjr-hR6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></center>
+</article>
+<h2>Juego</h2>
+    <article>
+        <center><iframe style="max-width:100%" src="https://wordwall.net/es/embed/05f7334666434786826ec8114079b7d5?themeId=2&templateId=10&fontStackId=0" width="500" height="380" frameborder="0" allowfullscreen></iframe></center>
+    </article>
+</section>
+<footer style="
+  background-color: #2c3e50;
+  color: white;
+  text-align: center;
+  padding: 30px 20px;
+  font-family: Arial, sans-serif;
+  margin-top: 40px;
+">
+  <p style="margin: 0; font-size: 1.2rem;">&copy; 2025 Diseño y Desarrollo Web. Todos los derechos reservados.</p>
+  <p style="margin-top: 8px; font-size: 0.9rem;">
+    Sitio creado por <strong>José López</strong> | <a href="adrianlo333111@gmail.com" style="color: #f39c12; text-decoration: none;">Contáctame</a>
+  </p>
+  <div style="margin-top: 10px;">
+    <a href="https://facebook.com" target="_blank" style="margin: 0 10px; color: #ecf0f1; text-decoration: none;">Facebook</a>
+    <a href="https://twitter.com" target="_blank" style="margin: 0 10px; color: #ecf0f1; text-decoration: none;">Twitter</a>
+    <a href="https://github.com" target="_blank" style="margin: 0 10px; color: #ecf0f1; text-decoration: none;">GitHub</a>
+  </div>
+</footer>
+</body>
+</html>

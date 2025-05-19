@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diseño y Desarrollo web</title>
+    <style>
+        header{
+            padding: 15px;
+            text-align: center;
+            background-color: rgb(255, 255, 255);
+        }
+         nav {
+            background-color: white;
+            overflow: hidden;
+            display: flex;
+            margin: 20px 0;
+            gap: 20px;
+            justify-content: center;
+        }
+        nav a {
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+            font-weight: bold;
+            border-radius: 10px;
+            background-color: #3498db;
+            transition: all 0.3s ease;
+            position: relative;  
+         } 
+        nav a::before{
+            content: "";
+            position: absolute;
+            width: 0%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background-color: #2980b9;
+            border-radius: 10px;
+            z-index: -1;
+            transition: width 0.3s ease;
+        }
+
+        nav a:hover::before{
+            width: 100%;
+        }
+        nav a:hover {
+            background-color: #ddd;
+            transform: scale(1.1);
+            box-shadow: 4px 4px 10px rgba(0,0,0,0.3);
+        }
+        section{
+            padding: 2rem;
+            margin: 2rem auto;
+            max-width: 1200px;
+            background-color: #ddd;
+            border-radius: 1rem;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+        }
+        article{
+            margin-bottom: 1.5rem;
+            padding: 1.5rem;
+            background-color: white;
+            border-left: 4px solid #ddd;
+            border-radius: 0.5rem;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+        }
+        article h1{
+            color: #555;
+            line-height: 1.6;
+            text-align: center;
+            justify-content: center;
+        }
+        article p{
+            color: #555;
+            line-height: 1.6;
+        }
+        section, article{
+            transition: all 0.5s;
+        }
+        
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #2980b9;
+    transform: scale(1.05);
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Diseño y Desarrollo web</h1>
+        <center><nav class="Menu">
+        <a href="Index.html">Inicio</a>
+        <a href="Robotica.html">Robotica</a>
+        <a href="Subcarpeta1/Juego.html">Juego y Formulario</a> 
+    </nav></center>
+    </header>
+    
+    <section>
+        <article>
+            <h2>¿Qué es el Diseño Web?</h2>
+            <p>El diseño web se enfoca en la apariencia y la experiencia de usuario de los sitios web. Incluye aspectos como la tipografía, los colores, el diseño de la interfaz, la usabilidad y la accesibilidad.</p>
+            <p>La complejidad de esta rama del diseño, cada vez en mayor auge, requiere de grandes profesionales detrás. Los diseñadores web destacan por sus habilidades creativas y gráficas, por su alta experiencia en el uso de tecnologías y software de diseño, y por su conocimiento de las últimas tendencias en un entorno tan cambiante y evolutivo como es el ámbito digital.</p>
+            <p>Las herramientas más comunes son Adobe XD, Figma, Sketch y Photoshop, junto con tecnologías como HTML y CSS para maquetar los diseños.</p>
+            
+            <center><img src="Introduccion.avif" alt=""width="300"></center>
+            <!DOCTYPE html>
+        </article>
+        <article>
+            <h2>¿Qué es el Desarrollo Web?</h2>
+            <p>El desarrollo web consiste en construir y mantener sitios web. Abarca desde el desarrollo del front-end (interfaz de usuario) hasta el back-end (servidor, bases de datos y lógica del negocio).</p>
+            <p>Los lenguajes comunes incluyen HTML, CSS, JavaScript, PHP, Python y frameworks como React, Angular y Node.js. También se utilizan CMS como WordPress para facilitar la gestión de contenidos.
+            </p>
+            <p>Un sitio web puede clasificarse de diferentes formas. Para cuestiones de desarrollo web principalmente se divide en dos partes. </p>
+            <p><b>Frontend</b>. Es la parte que interactúa con el usuario, tanto en imagen como en función. Por ello está íntimamente relacionada con la experiencia del usuario (UX) y la interfaz de usuario (IU). </p>
+            <p><b>Backend</b>. Se refiere a la parte que está en contacto directo con el servidor; es donde se aplica el código de programación para crear la estructura. Permanece en un segundo plano a cargo de la accesibilidad, actualización, bases de datos y cambios del sitio.</p>
+            <center><img src="desarrolloweb.jpg" width="300"></center>
+        </article>
+        <article>
+            <h2>Diferencia entre diseño y desarrollo web</h2>
+            <p>Los diseñadores web se enfocan en crear la apariencia y la experiencia del usuario en el sitio, utilizando una paleta de colores y herramientas como Adobe Photoshop, Sketch o Figma. En específico, se centran en aspectos como la imagen, gama de colores, cómo se verá el contenido, incluyendo texto, videos, fotografías, iconos, botones, menús, barras y demás elementos. Su objetivo es que el sitio sea fácil de entender y usar. </p>
+            <p>Por otro lado, el desarrollo web va de la mano del backend. Se asegura de que el código que sostiene la estructura sea funcional y a su vez lógico. También se hace cargo de la gestión de contenido y la base de datos de la web.</p>
+            <p>Se refiere a la parte técnica de la construcción del sitio web. Los desarrolladores web se enfocan en la codificación y programación del sitio web utilizando lenguajes como HTML, CSS, JavaScript y otros. Su objetivo es que el sitio responda correctamente a las interacciones que realice el usuario en él y concretar un stack tecnológico adecuado.</p>
+            <p>El diseño web corresponde a un sentido visual, ya que define la apariencia de cada una de las páginas que integren un sitio web, desde los iconos hasta imágenes o videos. Por su parte, el desarrollo web funge como un traductor del diseño para configurarlo en un lenguaje que entienda la red. El desarrollo web se enfoca en lo funcional; podrías tener un sitio navegable y útil aunque podría carecer de estética visual; por eso es tan importante que estas dos actividades se conjuguen.</p>
+            <center><img src="desarrollodisenowebdiferencias.png" alt="300" width="300"></center>
+        </article>
+        <article>
+          <h2>Video Recomendado</h2>
+            <center><iframe width="560" height="315" src="https://www.youtube.com/embed/dFhXYlMeTSA?si=G3WVdv5O5dCies_3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></center>
+        </article>
+         <article>
+    <h2 style="text-align: center; color: #2c3e50;">Formulario de Contacto</h2>
+
+<form 
+  action="javascript:void(0);" 
+  onsubmit="alert('Formulario enviado correctamente!');"
+  style="background-color: #fefefe; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); max-width: 600px; margin: 2rem auto; font-family: Arial, sans-serif;"
+>
+  <!-- Campo de nombre -->
+  <label for="nombre" style="display: block; font-weight: bold; margin-bottom: 5px;">Nombre:</label>
+  <input 
+    type="text" 
+    id="nombre" 
+    name="nombre" 
+    required 
+    style="width: 100%; padding: 12px; margin-bottom: 20px; border: 1px solid #ccc; border-radius: 8px;"
+  >
+
+  <!-- Campo de correo -->
+  <label for="correo" style="display: block; font-weight: bold; margin-bottom: 5px;">Correo electrónico:</label>
+  <input 
+    type="email" 
+    id="correo" 
+    name="correo" 
+    required 
+    style="width: 100%; padding: 12px; margin-bottom: 20px; border: 1px solid #ccc; border-radius: 8px;"
+  >
+
+  <!-- Campo de mensaje -->
+  <label for="mensaje" style="display: block; font-weight: bold; margin-bottom: 5px;">Mensaje:</label>
+  <textarea 
+    id="mensaje" 
+    name="mensaje" 
+    rows="4" 
+    required 
+    style="width: 100%; padding: 12px; margin-bottom: 20px; border: 1px solid #ccc; border-radius: 8px;"
+  ></textarea>
+
+  <!-- Campo de selección -->
+  <label for="asunto" style="display: block; font-weight: bold; margin-bottom: 5px;">Asunto:</label>
+  <select 
+    id="asunto" 
+    name="asunto" 
+    style="width: 100%; padding: 12px; margin-bottom: 20px; border: 1px solid #ccc; border-radius: 8px;"
+  >
+    <option value="consulta">Consulta</option>
+    <option value="soporte">Soporte técnico</option>
+    <option value="otro">Otro</option>
+  </select>
+
+  <!-- Botón de envío -->
+  <button 
+    type="submit" 
+    style="background-color: #3498db; color: white; border: none; padding: 12px 20px; border-radius: 8px; cursor: pointer; font-size: 1rem; transition: background-color 0.3s, transform 0.2s;"
+    onmouseover="this.style.backgroundColor='#2980b9'; this.style.transform='scale(1.05)';"
+    onmouseout="this.style.backgroundColor='#3498db'; this.style.transform='scale(1)';"
+  >
+    Enviar
+  </button>
+</form>
+
+    </section>
+     <footer style="
+  background-color: #2c3e50;
+  color: white;
+  text-align: center;
+  padding: 30px 20px;
+  font-family: Arial, sans-serif;
+  margin-top: 40px;
+">
+  <p style="margin: 0; font-size: 1.2rem;">&copy; 2025 Diseño y Desarrollo Web. Todos los derechos reservados.</p>
+  <p style="margin-top: 8px; font-size: 0.9rem;">
+    Sitio creado por <strong>José López</strong> | <a href="adrianlo333111@gmail.com" style="color: #f39c12; text-decoration: none;">Contáctame</a>
+  </p>
+  <div style="margin-top: 10px;">
+    <a href="https://facebook.com" target="_blank" style="margin: 0 10px; color: #ecf0f1; text-decoration: none;">Facebook</a>
+    <a href="https://twitter.com" target="_blank" style="margin: 0 10px; color: #ecf0f1; text-decoration: none;">Twitter</a>
+    <a href="https://github.com" target="_blank" style="margin: 0 10px; color: #ecf0f1; text-decoration: none;">GitHub</a>
+  </div>
+</footer>
+
+</body>
+</html>
